@@ -3,7 +3,7 @@ if (!navigator.mediaDevices) {
 }
 
 if (window.FaceDetector == undefined) {
-    console.log('Face Detection supported');
+    console.log('Face Detection unsupported');
     document.querySelector('#js-unsupported').classList.add('is-show')
 }
 
