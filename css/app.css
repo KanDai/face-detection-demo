@@ -1,0 +1,56 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.reader {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+
+.reader-video {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+}
+
+.unsupported {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    color: #fff;
+}
+
+.unsupported.is-show {
+    display: flex;
+}
+
+.unsupported-title {
+    font-weight: bold;
+    font-size: 2em;
+}
